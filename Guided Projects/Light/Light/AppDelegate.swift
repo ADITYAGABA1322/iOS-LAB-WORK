@@ -2,9 +2,7 @@
 //  AppDelegate.swift
 //  Light
 //
-//  Created by Doan Le Thieu on 3/19/18.
-//  Copyright © 2018 Doan Le Thieu. All rights reserved.
-//
+
 
 import UIKit
 
