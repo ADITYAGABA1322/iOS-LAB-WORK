@@ -1,10 +1,9 @@
+// iTunesSearch
 
 import UIKit
 
-class ItemTableViewCell: UITableViewCell, ItemDisplaying {
-    
+class ItemCollectionViewCell: UICollectionViewCell, ItemDisplaying {
     @IBOutlet var itemImageView: UIImageView!
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var detailLabel: UILabel!
-    
 }

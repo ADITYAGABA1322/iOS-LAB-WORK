@@ -24,6 +24,21 @@ class EmojiCollectionViewController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Items
+        let item = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth((1.0)), heightDimension: .fractionalHeight(1.0)))
+        
+        //group
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .absolute(70))
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitem: item, count:1)
+        let spacing : CGFloat = 5;
+        group.contentInsets = NSDirectionalEdgeInsets(top:spacing,leading: spacing, bottom: 0, trailing: spacing)
+        
+        // Section
+        let section = NSCollectionLayoutSection(group: group)
+        
+        collectionView.collectionViewLayout = UICollectionViewCompositionalLayout(section: section)
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
