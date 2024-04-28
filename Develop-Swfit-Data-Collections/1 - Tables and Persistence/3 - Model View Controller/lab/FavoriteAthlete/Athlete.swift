@@ -1,10 +1,3 @@
-//
-//  Athlete.swift
-//  FavoriteAthlete
-//
-//  Created by Student on 02/04/24.
-//
-
 import Foundation
 
 struct Athlete{
